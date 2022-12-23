@@ -1,0 +1,301 @@
+/* Split the screen in half */
+
+// .split {
+//     height: 100%;
+//     width: 50%;
+//     top: 0;
+//     overflow-x: hidden;
+//     padding-top: 2em;
+
+//   }
+.paragraph{
+  margin-bottom: 2em;
+}
+.centered{
+  width:100%
+}
+.landing-main{
+  // background-color: #D2DAFF;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          #ff7e7e 3%, 
+          #ddd8f5 25%, 
+          #f9bbff 55%, 
+          #bbffc4 100%
+    );  
+    animation: AnimateBG 16s ease infinite;
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+}
+  .landing-flex {
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .right {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    margin-right: -2em;
+    padding-top: 2em;
+    justify-content: center;
+  }
+  .avatar1{
+
+    width: 25em;
+    
+}
+
+  .left {
+    width: 50%;
+    margin-top: 1em;
+    padding-left:5em;
+
+  }
+  .button-group{
+    
+    display:flex;
+    
+  }
+.landing-button{
+  
+    margin-top: 1rem;
+    margin-right: 2rem;
+    width: 12rem;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: none;
+    justify-content: center;
+    color: #1A3152 !important;
+    text-decoration: none;
+    padding: .8rem 2rem;
+    font-size: 18px;
+    border: 1px solid #333;
+    width: fit-content;
+    
+    &:hover {
+      background-color: #1A3152;
+      color: #ffffff !important;
+    }
+}
+  .__button{
+
+    position: absolute;
+    width: 5rem;
+    height: 3rem;
+    left: 2.5rem;
+    top: 3rem;
+
+  }
+
+
+   
+     p {
+       margin-top: 2rem;
+       margin-bottom: 3rem;
+       font-size: 17px;
+       font-weight: 400;
+     }
+     .welcome-message {
+       font-size: 30px;
+     }
+
+  .h2-font{
+    font-size: 16px;
+    font-style: italic;
+  }
+
+
+  .maintitle{
+    position: absolute;
+    width: 30rem;
+    height: 4.5rem;
+    left: 8rem;
+    top: 1.5rem;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    color: #333;
+
+    img {
+      padding: 10px;
+
+    }
+
+  }
+
+
+  ///////////////  RESPONSIVE CSS ///////////////////
+
+@media(max-width:700px){
+  
+  .left {
+
+    margin-left: 3em;
+    // padding-top: 3em;
+  }
+  
+  .right {
+   
+    padding-right:1.5em;
+    margin-top:1.5em;
+    margin-right: 0em;
+
+  }
+  
+.landing-button{
+  
+    padding: .8rem 1rem;
+    width: fit-content;
+    font-size: 15px;
+}
+
+
+p {
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+  
+}
+.welcome-message {
+    font-size: 28px;
+    line-height: 4rem;
+}
+
+.h2-font{
+    font-size: 16px;
+    margin: .3em 0;
+  }
+
+.__button{
+  
+    height: 3.2rem;
+    left: 2.5rem;
+  }
+
+  .maintitle{
+    height: 2.5rem;
+    font-size: 38px;
+  
+
+    img {
+      padding: 10px;
+
+    }
+  }
+}
+
+@media(max-width:500px){
+
+.landing-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: flex-end;
+  }
+  .button-group{
+    justify-content: center;
+  }
+.landing-button{
+  
+    padding: .8rem 1.5rem;
+    width: fit-content;
+    font-size: 14px;
+ }    
+.maintitle{ 
+    font-size: 30px;
+  }
+.avatar1{
+  width: 70%;
+  }
+  .left{
+    margin-left: 0em;
+    padding-left: 0em;
+  }
+
+}
+
+@media(max-width:380px){
+
+  .left {
+
+    margin-left: 0em;
+    padding-left: 0em;
+  }
+  
+  .right {
+   
+    padding-right:1.5em;
+    margin-top:1.5em;
+    margin-right: 0;
+
+  }
+  
+.landing-button{
+  
+    padding: .6rem 1rem;
+    width: fit-content;
+    font-size: 12px;
+}
+
+.avatar1{
+    width: 80%;
+}
+
+p {
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+  
+}
+.welcome-message {
+    font-size: 20px;
+    line-height: 3.5rem;
+}
+
+.h2-font{
+    font-size: 12px;
+    margin: .2em 0;
+  }
+
+.__button{
+  
+    height: 3.2rem;
+    left: 2.5rem;
+    top: 3.5rem;
+  }
+
+  .maintitle{
+
+    height: 2.5rem;
+    font-size: 28px;
+  
+
+    img {
+      padding: 10px;
+
+    }
+  }
+}
