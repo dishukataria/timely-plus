@@ -29,7 +29,7 @@ const fetchClasses = async () => {
     process.env.REACT_APP_APPWRITE_DATABASE_ID,
     "classes"
   );
-  // console.log(data);
+  //console.log(data);
   return data;
 };
 
@@ -66,8 +66,10 @@ export default function Schedule() {
   useEffect(() => {
     const fetchDatas = async () => {
       const listOfData = await fetchClasses();
-      // console.log(listOfData.documents[0].startdate.substring(10, 8));
+      console.log(listOfData.documents[0].startdate.substring(10, 8));
+      
       const calData = listOfData.documents.map((data) => {
+        console.log(data.startdate.substring(5,10));
         var currStartDate = parseInt(data.startdate.substring(10, 8)) - 1;
         var currEndDate = parseInt(data.enddate.substring(10, 8)) - 1;
         const currData = {
@@ -89,6 +91,7 @@ export default function Schedule() {
         };
         return currData;
       });
+      console.log(calData);
       setAllEvents(calData);
       // for (const data of listOfData) {
       //   const currData = {

@@ -14,15 +14,15 @@ const Landing = () => {
     <div className="landing-main">
       <div role="button" className="name" tabIndex={0}>
           <img className="__button" src={icon} alt="add"></img>
-          <p className="maintitle">ScheduMate</p>
+          <p className="maintitle">TimelyPlus</p>
         </div>
         <div className="landing-flex">
         <div className="left">
         <div className="centered">
-          <strong><p className="welcome-message">Welcome to ScheduMate</p></strong>
+          <strong><p className="welcome-message">Welcome to TimelyPlus</p></strong>
           <h2 className="h2-font">Got classes common with friends? Sync them now.</h2>
           <p className='paragraph'>
-            ScheduMate is an application that allows you to easily see and sync the
+            TimelyPlus is an application that allows you to easily see and sync the
             classes that you have in common with your friends, access notes , get the latest updates by your University. Friends make
             classes so much better! Get started and Explore more!!
           </p>

@@ -26,7 +26,7 @@ const NavBar = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <br></br>
-          <Link to="/home"><strong>ScheduMate</strong></Link>
+          <Link to="/home"><strong>TimelyPlus</strong></Link>
 
           <a
             role="button"
@@ -46,7 +46,7 @@ const NavBar = () => {
                 });
               }
             }}
-            className="navbar-burger is-active"
+            className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
